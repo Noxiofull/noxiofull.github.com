@@ -1,0 +1,163 @@
+/*
+Azul oscuro:#1a535c
+Azul claro:#4ecdc4
+Blanco:#f7fff7
+Rojo claro:#ff6b6b
+Amarillo pollito:#ffe66d
+*/
+html{
+  font-family: 'MuseoModerno', cursive;
+}
+a{
+  text-decoration: none;/* Quitar o poner las lineas de los hipervinculos*/
+  color: #ff6b6b;
+}
+body{
+  margin: 0;
+}
+.titulos{
+  font-family: 'Oswald', sans-serif;
+  font-size: 30px;/*El tamano de la letras*/
+  text-transform: uppercase;/*Transformar las letras en mayusculas*/
+  font-weight: normal;/*Tranformar el tamaño de las letras*/
+  text-align: center;
+
+}
+.container{
+  background: #ff6b6b;
+  background: -webkit-linear-gradient(to right, #ec6f66, #f3a183); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ec6f66, #f3a183); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 100vh; /*Sirve para completar toda la pantalla o fondo*/
+  max-width: 100%;
+  display: flex;/* Flexibiliza los elementos que estan dentro del contenedor o del nodo padre*/
+  align-items: center;/*Tanto este como el de abajo , permite sentrar los elementos dentro de contenedor*/
+  justify-content: center;
+
+
+}
+.content{
+  max-width: 960px;
+  max.height: 250px;
+  width: 100%;
+  height: 70%;
+  background-color:white;
+  /*box-shadow: diferenciaHorizontal diferenciaVertical desenfoque amplitud  color; la amplitud casi no se usa*/
+  /*box-shadow: 0 3px 6px #000;*/
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16),0 3px 6px rgba(0,0,0,0.23);
+  border-radius: 4px;
+  position: relative;
+  padding: 1.8em;
+
+
+}
+.action{
+  position: absolute;
+  top: 1em;
+  right: 1em;
+}
+.close{
+  height: 40px;
+  width: 40px;
+  color : white;
+  border-radius: 50%;
+  background-color: #ff6b6b;
+  display: inline-block;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16),0 3px 6px rgba(0,0,0,0.23);
+  font-weight: 300;
+  cursor: pointer;/*Puntero*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.titulo2{
+  font-weight: bolder;
+  font-size: 20px;
+
+}
+/*p{
+  color:red;
+  text-transform:uppercase;<!-- Permite transformar las letras a mayusculas-->
+}*/
+.parrafos{
+  line-height: 1.8em;
+  font-weight: 300;
+
+}
+.Rojo{
+  background-color:red;
+  width:200px;
+  height:200px;
+}
+.table{
+  width: 100%;
+  border-spacing: 0;/*Quita los bordes*/
+}
+.table td,.table th{ /*Se puede hacer hasta en conjunto con otras clases*/
+  padding: 1em; /*Para hacer espacios*/
+  text-align: left;/*Para aliniear hacia una direccion*/
+}
+.table tr:nth-child(even){background-color:#ffcad4} /*Permite seleccionar a los elementos que posee dicha clase (even=Impares)(odd = Impares)*/
+.fa-star{
+  color:#fca311;
+}
+.title-item{
+/*  border-bottom-style: solid;
+  border-width: 2px;
+  border-color: #f3a183;
+  */
+  border-bottom: solid 2px #f3a183;
+  padding-bottom: 1em;
+  /*padding-top: 2em;*/
+  /*padding:arriba derecha abajo izquierda;
+  padding: Arriba/Abajo Derecha/Izquierda;*/
+}
+.Position{
+  background-color: #f3a183;
+  color:white;
+  padding:10px;
+  /*border-radius: 2em;-->Permite darle borde a un elemento*/
+  border-radius: 4px;
+  margin-right: 0.5em;
+}
+.direccion{
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.imagen{
+  float: left;
+  margin-right: 1em;
+  height: 250px;
+  width: 250px;
+}
+@media screen and (max-width:780px){
+  .content{
+    width: 60%;
+    height: 45%;
+    background-color:white;
+    /*box-shadow: diferenciaHorizontal diferenciaVertical desenfoque amplitud  color; la amplitud casi no se usa*/
+    /*box-shadow: 0 3px 6px #000;*/
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16),0 3px 6px rgba(0,0,0,0.23);
+    border-radius: 4px;
+    position: relative;
+    padding: 1.8em;
+    }
+    .table td,.table th{ /*Se puede hacer hasta en conjunto con otras clases*/
+      padding: 3.5em; /*Para hacer espacios*/
+      text-align: left;/*Para aliniear hacia una direccion*/
+    }
+.titulos{
+  font-size: 20px;
+}
+td{
+  font-size: 4px;
+}
+th{
+  font-size: 4px;
+}
+}
+#Boton-pago{
+  background-color:yellow;
+}
+/*td{
+  border:solid 1px;
+}*/
