@@ -78,10 +78,13 @@ body{
   color:red;
   text-transform:uppercase;<!-- Permite transformar las letras a mayusculas-->
 }*/
-.parrafos{
+.parrafos {
   line-height: 1.8em;
   font-weight: 300;
-
+}
+.parrafos2 {
+  line-height: 1.5em;
+  font-weight: 300;
 }
 .Rojo{
   background-color:red;
